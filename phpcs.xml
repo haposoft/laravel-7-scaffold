@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<ruleset name="Laravel Standards">
+    <description>PSR-2 for Laravel Project at Haposoft</description>
+    <file>./app</file>
+    <file>./database</file>
+    <file>./routes</file>
+    <file>./tests</file>
+    <!-- Ignore line ending because different developer may use different OS -->
+    <rule ref="PSR2">
+        <exclude name="Generic.Files.LineEndings"/>
+    </rule>
+
+    <!--<rule ref="Squiz.NamingConventions.ValidVariableName">-->
+
+    <!--</rule>-->
+    <rule ref="Generic.NamingConventions.CamelCapsFunctionName"/>
+    <rule ref="Generic.Debug.JSHint"/>
+    <rule ref="Generic.Debug.CSSLint"/>
+    <rule ref="Generic.NamingConventions.UpperCaseConstantName"/>
+    <!-- Ignore missing namespace rule for Laravel 5.2, because this version doesn't need in those files -->
+    <rule ref="PSR1.Classes.ClassDeclaration.MissingNamespace">
+        <exclude-pattern>./tests</exclude-pattern>
+        <exclude-pattern>./database</exclude-pattern>
+    </rule>
+    <!--  <rule ref="Squiz">
+     </rule> -->
+    <rule ref="Squiz.Scope.MemberVarScope"/>
+    <rule ref="Squiz.Scope.StaticThisUsage"/>
+    <rule ref="Generic.Files.LineLength">
+
+    </rule>
+    <rule ref="Generic.CodeAnalysis.EmptyStatement"/>
+    <rule ref="Generic.Formatting.DisallowMultipleStatements"/>
+    <rule ref="Generic.Formatting.SpaceAfterCast"/>
+    <rule ref="Generic.WhiteSpace.DisallowTabIndent"/>
+    <rule ref="Generic.Metrics.NestingLevel">
+        <properties>
+            <property name="nestingLevel" value="3"/>
+            <property name="absoluteNestingLevel" value="6"/>
+        </properties>
+    </rule>
+    <rule ref="Generic.WhiteSpace.ScopeIndent"/>
+    <rule ref="Squiz.WhiteSpace.CastSpacing"/>
+    <rule ref="Squiz.WhiteSpace.ControlStructureSpacing"/>
+    <rule ref="Squiz.WhiteSpace.LanguageConstructSpacing"/>
+    <rule ref="Squiz.WhiteSpace.LogicalOperatorSpacing"/>
+    <rule ref="Squiz.WhiteSpace.OperatorSpacing"/>
+    <rule ref="Squiz.WhiteSpace.PropertyLabelSpacing"/>
+    <rule ref="Squiz.WhiteSpace.ScopeClosingBrace"/>
+    <rule ref="Squiz.WhiteSpace.ScopeKeywordSpacing"/>
+    <rule ref="Squiz.WhiteSpace.SemicolonSpacing"/>
+
+</ruleset>
