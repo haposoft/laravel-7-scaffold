@@ -13,7 +13,7 @@ Quickly set up skeleton for your Laravel 7.x app
 
 ## Features
 - PHP mess detector: `./vendor/bin/phpmd app,database,routes,tests text phpmd.xml`
-
+- PHP_CodeSniffer: `./vendor/bin/phpcs`
 
 ## Technical support:
 - [Skype Group](https://join.skype.com/HxHLdORRW2gO)
