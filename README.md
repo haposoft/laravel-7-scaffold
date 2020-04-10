@@ -14,6 +14,9 @@ Quickly set up skeleton for your Laravel 7.x app
 ## Features:
 - PHP mess detector: `./vendor/bin/phpmd app,database,routes,tests text phpmd.xml`
 - PHP_CodeSniffer: `./vendor/bin/phpcs`
+- Auto check coding convention using Github Action 
+- Authentication by email & password 
+
 ## Install: 
 1. Clone this project 
 2. Run `composer install`
